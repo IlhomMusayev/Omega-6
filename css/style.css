@@ -30,8 +30,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
     margin: 0 auto;
+    padding: 30px 0;
 }
 .navbar h2{
     font-size: 24px;
@@ -57,6 +57,9 @@ body{
 .nav-line li a:hover{
     color: #F04037;
 }
+.mini-menu{
+    display: none;
+}
 /* *****************************Header********************************** */
 header{
     display: flex;
@@ -67,7 +70,7 @@ header{
     width: 50%;
 }
 .header-img img{
-    width: 550px;
+    width: 100%;
 }
 .header-text{
     width: 50%;
@@ -491,7 +494,7 @@ a.btn-1{
 }
 .fqa-item{
     display: flex;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 .fqa-icon{
     width: 50px;
@@ -528,7 +531,7 @@ footer{
     color: #555;
 }
 .footer{
-    background-color: #f2f2f;
+    background-color: #f2f2f2;
 }
 .buy-now-btn{
     background-color: #F0544C;
@@ -556,17 +559,213 @@ footer{
     color: #000;
 }
 
+.mini-menu button{
+    background: none;
+    border: none;
+}
+.mini-menu button img{
+    width: 30px;
+}
 
 
+@media(max-width: 1260px){
+    .container{
+        width: 1160px;
+    }
+}
+
+@media(max-width: 1160px){
+    .container{
+        width: 1060px;
+    }
+    .header-img{
+        width: 50%;
+    }
+    .header-img img{
+        width: 100%;
+    }
+    .header-text{
+        width: 50%;
+    }
+    .header-title{
+        font-size: 45px;
+    }
+    .testimonial-title h1{
+        font-size: 45px;
+    }
+    .content-title h1{
+        font-size: 45px;
+    }
+    .cta{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .cta-items{
+       flex-direction: column;
+    }
+    .cta-text{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .cta-text p{
+        width: 100%;
+    }
+    .reviews-title h1{
+        font-size: 45px;
+    }
+    .auther-title h1{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 1024px){
+    .container{
+        width: 920px;
+    }
+    .header-img img{
+        width: 100%;
+    }
+    .header-title{
+        font-size: 35px;
+    }
+    .reviews-items{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .reviews-item img{
+        padding-bottom: 20px;
+    }
+    .author{
+        padding: 10px 0;
+    }
+}
 
 
+@media(max-width: 920px){
+    .container{
+        width: 820px;
+    }
+    .about-author{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .author-about{
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+    }
+    .author-about .name{
+        text-align: center;
+    }
+    .pricing-boxs{
+        flex-direction: column;
+    }
+    .footer-headers{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-header{
+        text-align: center;
+    }
+    .footer-header h1{
+        width: 100%;
+    }
+    .footer-header p{
+        width: 100%;
+        padding: 30px 0;
+    }
+    
+}
 
+@media(max-width: 820px){
+    .container{
+        width: 720px;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .header-img img{
+        width: 80%;
+    }
+    .header-text{
+        text-align: center;
+        width: 100%;
+    }
+    .category-item{
+        margin: auto;
+    }
+    .testimonial-title p{
+        width: 100% ;
+    }
+    .content-title h1{
+        font-size: 35px;
+    }
+    .content-title p{
+        width: 100%;
+    }
+    .content-box-item{
+        flex-direction: column;
+        width: 100%;
+    }
+    .facts-items{
+        flex-direction: column;
+    }
+    .reviews-title h1{
+        font-size: 35px;
+    }
+    .reviews-title p{
+        width: 100%;
+    }
+    .auther-title h1{
+        font-size: 35px;
+    }
+    .fqa-items{
+        flex-direction: column;
+    }
+}
 
+@media(max-width: 720px){
+    .container{
+        width: 620px;
+    }
+    .nav-items, .get-strated-btn{
+        display: none;
+    }
+    .mini-menu{
+        display: block;
+    }
+    .comment-autor{
+        width: 100%;
+    }
+    .testimonial-title h1{
+        font-size: 35px;
+    }
+    .testimonial-item-img{
+        display: none;
+    }
+    .testimonial-item-text{
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .feature-items{
+        flex-direction: column;
+    }
+}
+@media(max-width: 620px){
+    .container{
+        width: 520px;
+    }
+}
 
-
-
-
-
+@media(max-width: 520px){
+    .container{
+        width: 90%;
+    }
+}
 
 
 
